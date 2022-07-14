@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Calculator</title>
+ <!-- styles -->
+ <link rel="stylesheet" href="style.css">
+ <!-- font awesome -->
+<link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css">
+</head>
+<body>
+
+ <main class="calculator">
+  <article class="display">
+   <div class="container">
+    <!-- container start -->
+    <div class="history-container">
+     <i class="fas fa-history" id="icon"></i>
+     <div class="history">
+      <p class="opration">3+6</p>
+      <p class="euality">=</p>
+      <p class="reult">9</p>
+     </div>
+
+    </div>
+    <!-- containeer end -->
+    <span class="upper-tab">
+    </span>
+   </div>
+   <!--  number display -->
+   <div class="num-display">
+   </div>
+  </article>
+  <!-- keys -->
+   <table class="keys">
+    <tr>
+     <td>(</td>
+     <td>)</td>
+     <td class="operator">%</td>
+     <td data-id="clear-all">AC</td>
+    </tr>
+    <tr>
+     <td>7</td>
+     <td>8</td>
+     <td>9</td>
+     <td class="operator">&divide;</td>
+    </tr>
+    <tr>
+     <td>4</td>
+     <td>5</td>
+     <td>6</td>
+     <td class="operator">&times;</td>
+    </tr>
+    <tr>
+     <td>1</td>
+     <td>2</td>
+     <td>3</td>
+     <td class="operator">&minus;</td>
+    </tr>
+    <tr>
+     <td>0</td>
+     <td >.</td>
+     <td data-id="equals">&equals;</td>
+     <td class="operator">+</td>
+    </tr>
+   </table>
+
+
+
+  <!-- swicth btn -->
+  <div class="btn-container">
+   <button type="button" class="numbers btn-style">123
+   </button>
+   <button type="button" class="fx">fx
+   </button>
+  </div>
+ </main>
+ <script src="./app.js"></script>
+</body>
+</html>

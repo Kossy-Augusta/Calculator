@@ -1,0 +1,62 @@
+const keys = document.querySelector(".keys");
+
+const upperTab = document.querySelector(".upper-tab");
+
+const display = document.querySelector(".num-display");
+
+let firstValue = "";
+let secondValue = "";
+let symbol = "";
+
+keys.addEventListener("click", function (e) {
+  const value = e.target;
+  const btnIsSymbol = value.classList.contains("operator");
+  buttonValue = value.innerHTML;
+  const special = value.dataset.id;
+
+  if (!special) {
+    if (firstValue && btnIsSymbol) {
+      symbol = buttonValue;
+      console.log(`symbol= ${symbol}`);
+    } else if (!symbol) {
+      firstValue += buttonValue;
+      console.log(`first= ${firstValue}`);
+    } else if (symbol) {
+      secondValue += buttonValue;
+      console.log(`second= ${secondValue}`);
+    }
+    display.textContent += buttonValue;
+    upperTab.textContent = "Ans=0";
+  }
+  if (special === "equals") {
+    if (firstValue && btnIsSymbol) {
+      symbol = buttonValue;
+      console.log(`symbol= ${symbol}`);
+    } else if (!symbol) {
+      firstValue += buttonValue;
+      console.log(`first= ${firstValue}`);
+    } else if (symbol) {
+      secondValue += buttonValue;
+      console.log(`second= ${secondValue}`);
+    }
+    console.log(
+      calculate()
+    );
+  }
+});
+
+function calculate() {
+  let result = "";
+  if (symbol == "+") {
+    result = parseFloat(firstValue) + parseFloat(secondValue);
+  } else if (symbol == "-") {
+    result = result = parseFloat(firstValue) - parseFloat(secondValue);
+  } else if (symbol == "*") {
+    result = result = parseFloat(firstValue) * parseFloat(secondvalue);
+  } else if (symbol == "÷") {
+    result = result = parseFloat(firstvalue) / parseFloat(secondvalue);
+  } else if (symbol == "%") {
+    result = result = parseFloat(firstvalue) % parseFloat(secondvalue);
+  }
+
+}

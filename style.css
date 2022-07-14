@@ -1,0 +1,142 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ color: #fff;
+}
+.calculator{
+ width: 90vw;
+ background: #0d0d0d;
+ height: 70vh;
+ display: grid;
+ gap: 0.75rem 0;
+ grid-template-rows: auto 1fr auto;
+
+margin: 2rem auto;
+}
+
+.display{
+ height: 9rem;
+ border: 2px solid #2f2e2e;
+ border-radius: 0.5rem;
+
+}
+.container{
+ display: flex;
+ justify-content: space-between;
+ 
+}
+.style-container{
+ width: 50%;
+
+ background: #252525;
+  border-radius: 0.5rem;
+
+ 
+}
+#icon{
+ color:#dbdbdb ;
+ font-size: 1.3rem;
+ padding: 0.75rem 1rem;
+
+}
+#icon:hover{
+ color: #8484b8;
+} 
+
+.history p{
+  display: inline;
+}
+.history{
+ transition: all 0.3sec linear;
+ letter-spacing: 0.5rem;
+ font-size: 1.3rem;
+ padding: 0.5rem 0.75rem;
+ color: #8484b8;
+ visibility: hidden;
+}
+.display-operation{
+  padding: 0.75rem 1rem;
+ margin-bottom: 2rem;
+ text-transform: capitalize;
+ letter-spacing: 0.3rem;
+ color:#dbdbdb;
+}
+.num-display{
+  text-align: right;
+  margin-top: 0.7remrem;
+  font-size: 2rem;
+}
+
+
+table{
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 1rem;
+  
+  
+
+  text-align: center;
+}
+tr,td{
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  cursor:pointer;
+  transition: all 1sec linear;
+}
+td{
+  padding: 0.75rem;
+}
+tr{
+  background:#252525 ;
+}
+td:hover{
+  background:#868383 ;
+}
+ td:nth-child(4){
+  background: #838181;
+}
+
+td:nth-child(4):hover{
+  background:#252525 ;
+}
+
+/* swich btn */
+
+.btn-container{
+  border: 1px solid #252525;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.numbers, .fx{
+  padding: 0.03rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0 0.15rem;
+  transition: var(--transition);
+
+}
+.numbers {
+  color:#696161;
+  
+}
+.numbers:hover {
+  color: #dbdbdb;
+}
+.fx {
+  color:#696161;
+  
+}
+.fx:hover {
+  color: #dbdbdb;
+}
+

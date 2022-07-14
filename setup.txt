@@ -1,0 +1,4 @@
+dark-background-color= #0d0d0d
+light-btn-color= #dbdbdb
+orange-btn-color= #f28739
+dark-btn-color= #252525
